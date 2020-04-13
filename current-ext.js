@@ -1224,13 +1224,10 @@ var chatCmdLookup = {
 		imgEmote(clubimg);
 	},
 	
-	"!poopsex": function() {
-		let pooplist = [
-			"//tenor.com/view/nigga-poop-sex-dance-dancing-gif-14044702",
-			
-		];
-		var poopimg = clublist[Math.floor(Math.random() * pooplist.length)];
-		imgEmote(poopimg);
+	"!poopsex":function() {
+		window.socket.emit("chatMsg", {
+			msg: //media1.tenor.com/images/dda11a83b81e089300024c2819416438/tenor.gif?itemid=14044702
+		});
 	},
 	
 	
