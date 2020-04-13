@@ -1223,6 +1223,18 @@ var chatCmdLookup = {
 		var clubimg = clublist[Math.floor(Math.random() * clublist.length)];
 		imgEmote(clubimg);
 	},
+	
+	"!poopsex": function() {
+		let pooplist = [
+			"//tenor.com/view/nigga-poop-sex-dance-dancing-gif-14044702",
+			
+		];
+		var poopimg = clublist[Math.floor(Math.random() * pooplist.length)];
+		imgEmote(poopimg);
+	},
+	
+	
+	
 	"/addqg": function(chatCmdText) {
 		window[CHANNEL.name].getVideoInfo(chatCmdText[1]);
 	},
