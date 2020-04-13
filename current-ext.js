@@ -1942,10 +1942,8 @@ function populateImgEmote(command) {
 	let temp = {};
 	let temp2 = {};
 	temp["!coffee"] = [];
-	temp["!club"] = [];
 	temp["!poopsex"] = [];
 	temp["!coffee"].push(function() {});
-	temp["!club"].push(function() {});
 	temp["!poopsex"].push(function() {});
 	
 	$.ajax({
@@ -1955,7 +1953,7 @@ function populateImgEmote(command) {
 		success: function(result) {
 			let entries = result.feed.entry;
 			let bodyString = "";
-			bodyString += "<li><b>!club</b></li>";
+			bodyString += "<li><b>!poopsex</b></li>";
 			bodyString += "<li><b>!coffee</b></li>";
 			entries.each(function(value, index) {
 				let urlString = value.gsx$url.$t.split('//');
