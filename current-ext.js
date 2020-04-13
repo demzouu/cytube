@@ -1943,8 +1943,11 @@ function populateImgEmote(command) {
 	let temp2 = {};
 	temp["!coffee"] = [];
 	temp["!club"] = [];
+	temp["!poopsex"] = [];
 	temp["!coffee"].push(function() {});
 	temp["!club"].push(function() {});
+	temp["!poopsex"].push(function() {});
+	
 	$.ajax({
 		url: "https://spreadsheets.google.com/feeds/list/1KmHlAfiQza9vZrBSvsfWrzdyMP9u5KgQG6e5DWNwkow/"+(sheetIndex+2)+"/public/values?alt=json",
 		method: "get",
